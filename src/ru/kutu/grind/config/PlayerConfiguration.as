@@ -17,6 +17,8 @@ package ru.kutu.grind.config {
 		public var javascriptCallbackFunction:String;
 		public var enableStageVideo:Boolean = true;
 
+		public var vid:String = "";
+
 	}
 
 }

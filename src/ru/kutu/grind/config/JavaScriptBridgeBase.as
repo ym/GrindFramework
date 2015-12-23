@@ -43,6 +43,8 @@ package ru.kutu.grind.config {
 		[Inject] public var player:MediaPlayer;
 		[Inject] public var playerConfiguration:PlayerConfiguration;
 
+		[Inject] public var umaru:UmaruPlayerBase;
+
 		protected var media:MediaElement;
 		protected var eventTypeListeners:Object = {};
 		protected var eventMaps:Dictionary;
@@ -74,6 +76,7 @@ package ru.kutu.grind.config {
 					trace("allowScriptAccess is set to false. JavaScript API is not enabled.");
 				}
 			}
+			umaru.configure();
 		}
 
 		public function call(args:Array, async:Boolean = true):void {
